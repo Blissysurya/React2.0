@@ -11,7 +11,7 @@ function App() {
     "role": "Product Designer who focuses on simplicity & usability.",
     "followers": 312,
     "projects": 48,
-    "avatarUrl": "https://example.com/photos/sophie_b.jpg"
+    "avatarUrl": "img1.jpg"
   },
   {
     "id": 2,
@@ -20,7 +20,7 @@ function App() {
     "role": "Senior UX Engineer building accessible digital experiences.",
     "followers": 854,
     "projects": 122,
-    "avatarUrl": "https://example.com/photos/marcus_c.jpg"
+    "avatarUrl": "img2.jpg"
   },
   {
     "id": 3,
@@ -29,7 +29,7 @@ function App() {
     "role": "Freelance Illustrator and Brand Identity Strategist.",
     "followers": 1205,
     "projects": 74,
-    "avatarUrl": "https://example.com/photos/elena_r.jpg"
+    "avatarUrl": "img3.jpg"
   },
   {
     "id": 4,
@@ -38,7 +38,7 @@ function App() {
     "role": "Lead Motion Designer specializing in micro-interactions.",
     "followers": 529,
     "projects": 31,
-    "avatarUrl": "https://example.com/photos/david_p.jpg"
+    "avatarUrl": "img4.jpg"
   },
   {
     "id": 5,
@@ -47,14 +47,14 @@ function App() {
     "role": "Front-end Developer with a passion for clean, minimal code.",
     "followers": 218,
     "projects": 15,
-    "avatarUrl": "https://example.com/photos/sarah_j.jpg"
+    "avatarUrl": "img5.jpg"
   }
 ]
 
   return (
-    <div className='flex justify-between '>
+    <div className='flex justify-evenly '>
        {users.map((user)=>{
-        return <Card />
+        return <Card name={user.name} role={user.role} followers={user.followers} projects={user.projects} img={user.avatarUrl}/>
        })} 
     </div>
   )
