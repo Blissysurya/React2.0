@@ -48,6 +48,9 @@ function App() {
     "followers": 218,
     "projects": 15,
     "avatarUrl": "img5.jpg"
+  },
+  {
+    
   }
 ]
 
