@@ -49,9 +49,6 @@ function App() {
     "projects": 15,
     "avatarUrl": "img5.jpg"
   },
-  {
-    
-  }
 ]
 
   return (
